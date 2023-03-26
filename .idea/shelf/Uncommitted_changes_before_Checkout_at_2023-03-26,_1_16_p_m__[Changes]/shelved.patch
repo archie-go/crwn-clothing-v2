@@ -1,0 +1,85 @@
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Directory from './components/directory/directory.component';\n\nconst App = () => {\n  const categories = [\n    {\n      id: 1,\n      title: 'hats',\n      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',\n    },\n    {\n      id: 2,\n      title: 'jackets',\n      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',\n    },\n    {\n      id: 3,\n      title: 'sneakers',\n      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',\n    },\n    {\n      id: 4,\n      title: 'womens',\n      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',\n    },\n    {\n      id: 5,\n      title: 'mens',\n      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',\n    },\n  ];\n\n  return <Directory categories={categories} />;\n};\n\nexport default App;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.js b/src/App.js
+--- a/src/App.js	(revision a801a8d39f8de5ff3067700ba4356de8113f66d0)
++++ b/src/App.js	(date 1679850953087)
+@@ -1,35 +1,43 @@
+-import Directory from './components/directory/directory.component';
+-
+ const App = () => {
+-  const categories = [
+-    {
+-      id: 1,
+-      title: 'hats',
+-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+-    },
+-    {
+-      id: 2,
+-      title: 'jackets',
+-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+-    },
+-    {
+-      id: 3,
+-      title: 'sneakers',
+-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+-    },
+-    {
+-      id: 4,
+-      title: 'womens',
+-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+-    },
+-    {
+-      id: 5,
+-      title: 'mens',
+-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+-    },
+-  ];
+-
+-  return <Directory categories={categories} />;
++  return (
++    <div className='categories-container'>
++      <div className='category-container'>
++        {/* <img /> */}
++        <div className='category-body-container'>
++          <h2>Hats</h2>
++          <p>Shop Now</p>
++        </div>
++      </div>
++      <div className='category-container'>
++        {/* <img /> */}
++        <div className='category-body-container'>
++          <h2>Jackets</h2>
++          <p>Shop Now</p>
++        </div>
++      </div>
++      <div className='category-container'>
++        {/* <img /> */}
++        <div className='category-body-container'>
++          <h2>Sneakers</h2>
++          <p>Shop Now</p>
++        </div>
++      </div>
++      <div className='category-container'>
++        {/* <img /> */}
++        <div className='category-body-container'>
++          <h2>Womens</h2>
++          <p>Shop Now</p>
++        </div>
++      </div>
++      <div className='category-container'>
++        {/* <img /> */}
++        <div className='category-body-container'>
++          <h2>Mens</h2>
++          <p>Shop Now</p>
++        </div>
++      </div>
++    </div>
++  );
+ };
+ 
+ export default App;
